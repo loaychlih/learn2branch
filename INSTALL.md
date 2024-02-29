@@ -90,7 +90,7 @@ pip install git+https://github.com/jma127/pyltr@78fa0ebfef67d6594b8415aa5c6136e3
 git clone https://github.com/ds4dm/PySVMRank.git
 cd PySVMRank
 wget http://download.joachims.org/svm_rank/current/svm_rank.tar.gz  # get SVMrank original source code
-comment line 34 in src/c/svm_light/svm_hideo.c, it seems to fix the problem : // long verbosity;
+// long verbosity;  # comment line 34 in src/c/svm_light/svm_hideo.c, it seems to fix the problem  
 mkdir src/c
 tar -xzf svm_rank.tar.gz -C src/c
 pip install .
