@@ -1,4 +1,15 @@
+#Création de l'environnement : 
+Pour Parameterizing Branch-and-Bound Search Trees to Learn Branching Policies repo : 
+```
+conda create --name myenv python=3.8.0
+conda activate myenv
+```
+
 # SCIP solver
+Installation de scipoptsuite-6.0.1.tgz qui contient SCIP 6.0.1 / SoPlex version 4.0.1
+https://www.scipopt.org/index.php#download
+
+Une fois ceci fait : extracter seulement le fichier de scip et soplex dans le projet
 
 Set-up a desired installation path for SCIP / SoPlex (e.g., `/opt/scip`):
 ```
@@ -8,12 +19,9 @@ export SCIPOPTDIR='/opt/scip'
 ## SoPlex
 
 SoPlex 4.0.1 (free for academic uses)
-
-https://soplex.zib.de/download.php?fname=soplex-4.0.1.tgz
-
 ```
-tar -xzf soplex-4.0.1.tgz
-cd soplex-4.0.1/
+tar -xzf soplex.tgz
+cd soplex/
 mkdir build
 cmake -S . -B build -DCMAKE_INSTALL_PREFIX=$SCIPOPTDIR
 make -C ./build -j 4
@@ -35,7 +43,7 @@ cd scip-6.0.1/
 Apply patch file in `learn2branch/scip_patch/`
 
 ```
-patch -p1 < ../learn2branch/scip_patch/vanillafullstrong.patch
+patch -p1 < ../learn2branch/scip_patch/vanillafullstrong.patch ( Si ça marche pas essaier le full path : patch -p1 < /home/loay/learn2branch/scip_patch/vanillafullstrong.patch) 
 ```
 
 ```
