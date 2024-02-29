@@ -1,4 +1,4 @@
-#Création de l'environnement : 
+# Création de l'environnement : 
 Pour Parameterizing Branch-and-Bound Search Trees to Learn Branching Policies repo : 
 ```
 conda create --name myenv python=3.8.0
@@ -66,7 +66,7 @@ https://docs.conda.io/en/latest/miniconda.html
 
 Required to compile PySCIPOpt and PySVMRank
 ```
-conda install cython
+pip install Cython==3.0.0a11
 ```
 
 ## PySCIPOpt
