@@ -1,4 +1,3 @@
-
 # Création de l'environnement : 
 ```
 conda create --name myenv python=3.9.0
@@ -29,7 +28,7 @@ make -C ./build install
 cd ..
 ```
 
-# SCIP
+## SCIP
 
 SCIP 6.0.1 (free for academic uses)
 
@@ -98,5 +97,5 @@ pip install .
 
 ## Tensorflow
 ```
-conda install tensorflow-gpu=1.12.0
+conda install tensorflow-gpu=1.12.0   # Version 1 de tenserflow non compatible 
 ```
