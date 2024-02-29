@@ -1,6 +1,6 @@
 # Création de l'environnement : 
 ```
-conda create --name myenv python=3.9.0
+conda create --name myenv python=3.9.15
 conda activate myenv
 ```
 
