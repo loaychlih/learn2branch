@@ -1,7 +1,7 @@
+
 # Création de l'environnement : 
-Pour Parameterizing Branch-and-Bound Search Trees to Learn Branching Policies repo : 
 ```
-conda create --name myenv python=3.8.0
+conda create --name myenv python=3.9.0
 conda activate myenv
 ```
 
@@ -43,7 +43,7 @@ cd scip-6.0.1/
 Apply patch file in `learn2branch/scip_patch/`
 
 ```
-patch -p1 < ../learn2branch/scip_patch/vanillafullstrong.patch ( Si ça marche pas essaier le full path : patch -p1 < /home/loay/learn2branch/scip_patch/vanillafullstrong.patch) 
+patch -p1 < ../learn2branch/scip_patch/vanillafullstrong.patch ( Si cela ne fonctionne pas, essayez d'utiliser le chemin complet : patch -p1 < /home/loay/learn2branch/scip_patch/vanillafullstrong.patch ) 
 ```
 
 ```
@@ -53,8 +53,6 @@ make -C ./build -j 4
 make -C ./build install
 cd ..
 ```
-
-For reference, original installation instructions [here](http://scip.zib.de/doc/html/CMAKE.php).
 
 # Python dependencies
 
@@ -92,6 +90,7 @@ pip install git+https://github.com/jma127/pyltr@78fa0ebfef67d6594b8415aa5c6136e3
 git clone https://github.com/ds4dm/PySVMRank.git
 cd PySVMRank
 wget http://download.joachims.org/svm_rank/current/svm_rank.tar.gz  # get SVMrank original source code
+comment line 34 in src/c/svm_light/svm_hideo.c, it seems to fix the problem : // long verbosity;
 mkdir src/c
 tar -xzf svm_rank.tar.gz -C src/c
 pip install .
