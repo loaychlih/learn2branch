@@ -40,7 +40,7 @@ cd scip-6.0.1/
 Apply patch file in `learn2branch/scip_patch/`
 
 ```
-patch -p1 < ../learn2branch/scip_patch/vanillafullstrong.patch ( Si cela ne fonctionne pas, essayez d'utiliser le chemin complet : patch -p1 < /home/loay/learn2branch/scip_patch/vanillafullstrong.patch ) 
+patch -p1 < ../learn2branch/scip_patch/vanillafullstrong.patch # Si cela ne fonctionne pas, essayez d'utiliser le chemin complet : patch -p1 < /home/loay/learn2branch/scip_patch/vanillafullstrong.patch 
 ```
 
 ```
