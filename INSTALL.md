@@ -19,7 +19,6 @@ export SCIPOPTDIR='/opt/scip'
 
 SoPlex 4.0.1 (free for academic uses)
 ```
-tar -xzf soplex.tgz
 cd soplex/
 mkdir build
 cmake -S . -B build -DCMAKE_INSTALL_PREFIX=$SCIPOPTDIR
@@ -35,7 +34,6 @@ SCIP 6.0.1 (free for academic uses)
 https://scip.zib.de/download.php?fname=scip-6.0.1.tgz
 
 ```
-tar -xzf scip-6.0.1.tgz
 cd scip-6.0.1/
 ```
 
