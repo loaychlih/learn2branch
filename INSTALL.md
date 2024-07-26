@@ -1,4 +1,4 @@
-### THE SAME INSTALLATION GOES FOR HYBRIDBRANCHING 
+### THE SAME INSTALLATION GOES FOR the repository HYBRIDBRANCHING: https://github.com/pg2455/Hybrid-learn2branch
 # Création de l'environnement : 
 ```
 conda create --name myenv python=3.9.15
