@@ -1,3 +1,4 @@
+###THE SAME INSTALLATION GOES FOR HYBRIDBRANCHING 
 # Création de l'environnement : 
 ```
 conda create --name myenv python=3.9.15
@@ -12,7 +13,8 @@ Une fois ceci fait : extracter seulement le fichier de scip et soplex dans le pr
 
 Set-up a desired installation path for SCIP / SoPlex (e.g., `/opt/scip`):
 ```
-export SCIPOPTDIR='/opt/scip'
+ !!!! It's better to create a file in your local project e.g learn2branch/scipinstallation), so that you don't use sudo+ its stays locally in your projecct not in your system like /opt/scip
+export SCIPOPTDIR='learn2branch/scipinstallation' or export SCIPOPTDIR='/opt/scip' 
 ```
 
 ## SoPlex
@@ -61,7 +63,7 @@ https://docs.conda.io/en/latest/miniconda.html
 
 Required to compile PySCIPOpt and PySVMRank
 ```
-pip install Cython==3.0.0a11
+pip install Cython==3.0.0a11 
 ```
 
 ## PySCIPOpt
